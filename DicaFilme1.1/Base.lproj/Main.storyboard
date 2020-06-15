@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DicaFilme1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="33C-BX-QPr">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DicaFilmes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Tm-1q-xRa">
+                                        <rect key="frame" x="91" y="37" width="139" height="25"/>
+                                        <fontDescription key="fontDescription" name="Copperplate-Bold" family="Copperplate" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.63830504440000002" green="0.16960390650000001" blue="0.1211826796" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5Tm-1q-xRa" firstAttribute="leading" secondItem="33C-BX-QPr" secondAttribute="leading" constant="91" id="7pA-RN-v1E"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Tm-1q-xRa" secondAttribute="trailing" constant="90" id="RjA-XY-Ett"/>
+                                    <constraint firstItem="5Tm-1q-xRa" firstAttribute="top" secondItem="33C-BX-QPr" secondAttribute="top" constant="37" id="geL-XR-QLt"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="J9a-HA-Tqa">
+                                <rect key="frame" x="16" y="108" width="288" height="440"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="440" id="xok-Xt-JpO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OTa-9y-UFK">
+                                    <size key="itemSize" width="136" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionView" id="RiD-LG-e7v" customClass="UICollecCollectionViewCell" customModule="DicaFilme1_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="136" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYw-e9-DfJ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="134" height="150"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="zYw-e9-DfJ" firstAttribute="top" secondItem="RiD-LG-e7v" secondAttribute="top" id="PAC-pI-xDF"/>
+                                            <constraint firstAttribute="bottom" secondItem="zYw-e9-DfJ" secondAttribute="bottom" id="bBN-BV-W7Y"/>
+                                            <constraint firstItem="zYw-e9-DfJ" firstAttribute="leading" secondItem="RiD-LG-e7v" secondAttribute="leading" id="mbX-Qs-DRM"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="zYw-e9-DfJ" secondAttribute="trailing" constant="-14" id="rjS-g7-Cf5"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="capaFilme" destination="zYw-e9-DfJ" id="JI3-iK-Ls5"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J9a-HA-Tqa" firstAttribute="centerX" secondItem="33C-BX-QPr" secondAttribute="centerX" id="8xE-fC-SIw"/>
+                            <constraint firstItem="33C-BX-QPr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="RTX-sM-7TZ"/>
+                            <constraint firstItem="33C-BX-QPr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Tkp-8w-BFA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J9a-HA-Tqa" secondAttribute="trailing" constant="16" id="dmM-KI-Gx6"/>
+                            <constraint firstItem="J9a-HA-Tqa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="fNi-wF-EGY"/>
+                            <constraint firstItem="33C-BX-QPr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="fjt-yW-1Vb"/>
+                            <constraint firstAttribute="bottom" secondItem="J9a-HA-Tqa" secondAttribute="bottom" constant="20" symbolic="YES" id="ihK-p9-E5c"/>
+                            <constraint firstItem="J9a-HA-Tqa" firstAttribute="top" secondItem="33C-BX-QPr" secondAttribute="bottom" constant="8" id="qh7-Md-IT2"/>
+                            <constraint firstItem="33C-BX-QPr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="xV9-fT-dDL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="colecaoFilmes" destination="J9a-HA-Tqa" id="xi5-XF-7TY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.25" y="87.676056338028175"/>
+        </scene>
+        <!--Detalhes View Controller-->
+        <scene sceneID="gU9-cc-B3o">
+            <objects>
+                <viewController storyboardIdentifier="detalhes" id="Pjg-Lq-8Tv" customClass="DetalhesViewController" customModule="DicaFilme1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3Q-Fj-zfa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iyo-6G-uXQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyc-Mc-I4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="788" y="88"/>
+        </scene>
+    </scenes>
+</document>

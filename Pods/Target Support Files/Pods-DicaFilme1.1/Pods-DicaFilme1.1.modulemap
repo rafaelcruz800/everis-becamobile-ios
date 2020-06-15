@@ -1,0 +1,6 @@
+framework module Pods_DicaFilme1_1 {
+  umbrella header "Pods-DicaFilme1.1-umbrella.h"
+
+  export *
+  module * { export * }
+}
